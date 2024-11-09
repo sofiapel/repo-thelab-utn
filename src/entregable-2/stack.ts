@@ -13,6 +13,8 @@ class Stack <T> {
     };
     public pop(): void {
       this.items.pop();
+      this._size--;
+
     };
 };
 
@@ -21,7 +23,7 @@ class UniqueStack <T> extends Stack <T> {
         if(!this.items.includes(item)){
             super.push(item);
         }else{
-            console.log("El elemento ya se encuentra en la lista");
+            console.warn("El elemento ya se encuentra en la lista");
         };  
     };
 };
