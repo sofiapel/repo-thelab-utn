@@ -1,1 +1,1 @@
-const { guessNumberGame } = require('./entregable-1/ej');
+require('./entregable-2/stack.ts');
